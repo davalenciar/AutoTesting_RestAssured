@@ -2,23 +2,25 @@ package Dummy.employee.request.Builder;
 
 import Dummy.employee.request.EmployeeRequest;
 
-public class BuildNewEmployeeMale extends EmployeeRequestBuilder {
+public class BuildNewEmployee extends EmployeeRequestBuilder {
 
-    public BuildNewEmployeeFake(){
+    public BuildNewEmployee(){
         super.employee=new EmployeeRequest();
     }
 
     @Override
     public void Buildname() {
-        employee.setName(faker.internet().emailAddress());
+        employee.setName("marlon");
+    }
+
+
+    @Override
+    public void Buildsalary() {
+        employee.setSalary("200000");
     }
 
     @Override
-    public void Buildsalary()  {
-        employee.setSalary("20000");
-    }
-    @Override
     public void Buildage() {
-        employee.setAge(faker.number().digit().toString());
+        employee.setAge("23 anios");
     }
 }

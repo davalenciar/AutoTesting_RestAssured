@@ -1,4 +1,4 @@
-package Dummy.Employye.response;
+package Dummy.employee.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

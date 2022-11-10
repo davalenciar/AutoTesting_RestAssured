@@ -13,7 +13,7 @@ public class BuildNewUserMale extends UserRequestBuilder{
     }
 
     public void Buildgender() {
-        user.setName("male");
+        user.setGender("male");
     }
 
     public void Buildstatus() {
