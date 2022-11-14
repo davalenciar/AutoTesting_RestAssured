@@ -14,7 +14,7 @@ En la raiz del proyecto comando de linea.
 > Ejecutar todas las pruebas
 
 ````
-gradle :test --tests "GoRest"
+gradle :test --tests "TwoTest"
 ````
 
 > Ejecutar la creacion de nuevo usaurio 
