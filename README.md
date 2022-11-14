@@ -17,16 +17,16 @@ En la raiz del proyecto comando de linea.
 gradle :test --tests "GoRest"
 ````
 
-> Ejecutar la creacion de usaurio femenino
+> Ejecutar la creacion de nuevo usaurio 
 
  ````
- gradle :test --tests "GoRest.createUserFamale"
+ gradle :test --tests "TwoTest.createEmployeeNew"
 
  ````
 
-> Ejecutar la creacion de post de historia
+> Ejecutar la creacion de post usario con info fake
 
  ````
- gradle :test --tests "GoRest.createPostHistory"
+ gradle :test --tests "TwoTest.createEmployeeFake"
 
  ````
