@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id "io.qameta.allure" version "2.11.2"
 }
 
 group 'org.example'
@@ -9,6 +10,7 @@ repositories {
     mavenCentral()
 }
 
+
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
@@ -17,6 +19,8 @@ dependencies {
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.4.2'
     // https://mvnrepository.com/artifact/com.github.javafaker/javafaker
     implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
+// https://mvnrepository.com/artifact/io.qameta.allure/allure-junit-platform
+    implementation group: 'io.qameta.allure', name: 'allure-junit-platform', version: '2.19.0'
 
 
 }
