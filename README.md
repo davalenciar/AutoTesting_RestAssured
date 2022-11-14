@@ -28,5 +28,20 @@ gradle :test --tests "TwoTest"
 
  ````
  gradle :test --tests "TwoTest.createEmployeeFake"
+````
+> Ejecutar la creacion de post usario masculino
 
+ ````
+ gradle :test --tests "TwoTest.createEmployeeMale"
+````
+ 
+> Run test by Env
+>Para el ambiente de producción
+ ````
+gradle :test --tests "TwoTest.createEmployeeNew" -Denv=prod
+````
+
+>Para el ambiente de pruebas
+````
+gradle :test --tests "TwoTest.createEmployeeFake" -Denv=test
  ````
