@@ -38,20 +38,14 @@ public class TwoTest{
 
     @BeforeEach
     public void setup(){
-        /**Variables de ambiente para probar en ambinetes de produccion*/
-        //RestAssured.baseURI=getData("base.url");
-       // RestAssured.basePath=getData("base.path");
-
-        /**Variables de ambiente para probar en su local*/
-        //RestAssured.baseURI=getData("base.url.dummy");
-        //RestAssured.basePath=getData("base.path.dummy");
-
-        /**serializacion y refactorizacion de JSONCONTENT*/
-       // RestAssured.filters(new RequestLoggingFilter(),new ResponseLoggingFilter());
-       // RestAssured.requestSpecification = new RequestSpecBuilder().setContentType(ContentType.JSON).build();
+       
+        RestAssured.baseURI=getData("base.url.dummy");
+        RestAssured.basePath=getData("base.path.dummy");
+        RestAssured.filters(new RequestLoggingFilter(),new ResponseLoggingFilter());
+        RestAssured.requestSpecification = new RequestSpecBuilder().setContentType(ContentType.JSON).build();
 
     }
-   /* @Test
+    @Test
     @Description("New Employee")
     @Epic("Create EMployee")
     @Feature("Employee")
@@ -118,5 +112,5 @@ public class TwoTest{
 
         responseBodyEmployee = objectMapper.readValue(response, EmployeeResponse.class);
         assertThat(responseBodyEmployee.getData().getAge(), equalTo(responseBodyEmployee.getData().getAge()));
-    }*/
+    }
 }
