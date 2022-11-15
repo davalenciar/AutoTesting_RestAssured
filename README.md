@@ -24,24 +24,26 @@ gradle :test --tests "TwoTest"
 
  ````
 
-> Ejecutar la creacion de post usario con info fake
+> Ejecutar la creacion de usario con info fake
 
  ````
  gradle :test --tests "TwoTest.createEmployeeFake"
 ````
-> Ejecutar la creacion de post usario masculino
+> Ejecutar la creacion de usario masculino
 
  ````
  gradle :test --tests "TwoTest.createEmployeeMale"
 ````
  
 > Run test by Env
->Para el ambiente de producción
+>Para el ambiente Local
  ````
-gradle :test --tests "TwoTest.createEmployeeNew" -Denv=prod
+gradle :test --tests "TwoTest.createEmployeeNew" -Denv=test
 ````
-
->Para el ambiente de pruebas
 ````
 gradle :test --tests "TwoTest.createEmployeeFake" -Denv=test
  ````
+ ````
+ gradle :test --tests "TwoTest.createEmployeemale" -Denv=test
+ ````
+ 
